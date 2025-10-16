@@ -1,0 +1,19 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Node modules if you add them later
+node_modules/
+
+# Environment variables
+.env
+
+# Debug logs
+*.log
+
+# Excel temp files
+~$*
