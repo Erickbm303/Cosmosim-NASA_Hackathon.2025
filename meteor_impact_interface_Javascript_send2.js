@@ -1,4 +1,3 @@
-
 // ---------------- Utils ----------------
 function parseCSV(text){
   const rows=[]; let row=[], i=0, cur='', q=false;
@@ -30,8 +29,7 @@ function havKm(aLat,aLon,bLat,bLon){
 function groupBy(arr,key){ const m=new Map(); for(const it of arr){ const k=key(it); if(!m.has(k)) m.set(k,[]); m.get(k).push(it);} return m; }
 function colIndex(letter){ return letter.trim().toUpperCase().charCodeAt(0)-65; }
 
-// ---------------- Map ----------------
-const map=L.map('map').setView([40.7,-74.0],4);
+// ---------------- Map ----------------nconst map=L.map('map').setView([40.7,-74.0],4);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap'}).addTo(map);
 
 let impactMarker=L.circleMarker([40.7,-74.0],{radius:7,color:'#22c55e',weight:2,fillOpacity:.9}).addTo(map);
@@ -124,7 +122,11 @@ document.getElementById('tsunamiCsv').addEventListener('change', async (e)=>{
 
 function updateLoadStatus(){
   const neo=neoRows.length, q=quakeRows.length?quakeRows.length-1:0, t=tsunamiRows.length?tsunamiRows.length-1:0;
-  loadStatus.textContent=`Loaded → NEO: ${neo} | Earthquakes: ${q} | Tsunamis: ${t}`;
+  loadStatus.textContent=`Loaded 
+
+
+
+→ NEO: ${neo} | Earthquakes: ${q} | Tsunamis: ${t}`;
 }
 
 // --------------- Simulation ---------------
@@ -172,7 +174,7 @@ function calculateImpact(meteor, impact) {
   // Convert inputs to proper units
   const diameter = meteor.diameter * 1000; // km to meters
   const velocity = meteor.velocity * 1000; // km/s to m/s
-  const density = impact.density; // kg/m³
+  const density = impact.density; // kg/m8
   
   // Calculate impact energy
   const mass = (4/3) * PI * Math.pow(diameter/2, 3) * density;
