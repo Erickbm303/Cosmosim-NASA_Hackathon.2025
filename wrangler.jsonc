@@ -1,6 +1,6 @@
 {
   // Minimal Wrangler config to deploy static assets in ./dist
-  "name": "meteor-impact-interface",
+  "name": "cosmosim-v3",
   "compatibility_date": "2025-10-16",
   "assets": {
     "directory": "./dist"
