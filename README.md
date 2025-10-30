@@ -1,8 +1,7 @@
 ☄️ CosmoSim - Meteor Impact Simulator
 
 A web-based simulator for visualizing meteor impacts on Earth — including effects on nearby cities, earthquake zones, and tsunami potential.
-Now fully hosted on Cloudflare:
-👉 Launch the App
+Now fully hosted on Cloudflare.
 
 🌍 Overview
 
